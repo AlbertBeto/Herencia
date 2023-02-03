@@ -14,21 +14,24 @@ public class Cabeza {
         this.resistenciaGolpes = resistenciaGolpes;
     }
 
+    public void descripcionCompleta(){
 
+        System.out.println("Nombre: "+getNombre()+" Descripción: "+getDescripcion());
+    }
 
-    public String getNombre() {
+    private String getNombre() {
         return nombre;
     }
 
-    public int getProteccionFisica() {
+    private int getProteccionFisica() {
         return proteccionFisica;
     }
 
-    public String getDescripcion() {
+    private String getDescripcion() {
         return descripcion;
     }
 
-    public int getResistenciaGolpes() {
+    private int getResistenciaGolpes() {
         return resistenciaGolpes;
     }
 }

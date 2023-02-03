@@ -17,25 +17,41 @@ public class EquipoPersonaje {
         this.brazosGuantes = brazosGuantes;
         this.piernas = piernas;
         this.botas = botas;
-        setProteccionFisicaCompleta(cabeza.getProteccionFisica()+torso.getProteccionFisica()+brazosGuantes.getProteccionFisica()+piernas.getProteccionFisica()+botas.getProteccionFisica());
-        setResitenciaGolpesTotal(cabeza.getResistenciaGolpes()+torso.getResistenciaGolpes()+brazosGuantes.getResistenciaGolpes()+piernas.getResistenciaGolpes()+botas.getResistenciaGolpes());
+        //setProteccionFisicaCompleta(cabeza.getProteccionFisica()+torso.getProteccionFisica()+brazosGuantes.getProteccionFisica()+piernas.getProteccionFisica()+botas.getProteccionFisica());
+        //setResitenciaGolpesTotal(cabeza.getResistenciaGolpes()+torso.getResistenciaGolpes()+brazosGuantes.getResistenciaGolpes()+piernas.getResistenciaGolpes()+botas.getResistenciaGolpes());
+    }
+
+    public void DescripcionCompletaTorso(){
+        torso.descripcionCompleta();
+    }
+
+    public void DescripcionCompletaCabeza(){
+        cabeza.descripcionCompleta();
     }
 
 
+    private Torso getTorso(){
+return torso;
+    }
 
-    public final void setProteccionFisicaCompleta(int proteccionFisicaCompleta) {
+    private Cabeza getCabeza(){
+        return cabeza;
+    }
+
+
+    private final void setProteccionFisicaCompleta(int proteccionFisicaCompleta) {
         this.proteccionFisicaCompleta = proteccionFisicaCompleta;
     }
 
-    public final void setResitenciaGolpesTotal(int resitenciaGolpesTotal) {
+    private final void setResitenciaGolpesTotal(int resitenciaGolpesTotal) {
         this.resitenciaGolpesTotal = resitenciaGolpesTotal;
     }
 
-    public int getProteccionFisicaCompleta() {
+    private int getProteccionFisicaCompleta() {
         return proteccionFisicaCompleta;
     }
 
-    public int getResitenciaGolpesTotal() {
+    private int getResitenciaGolpesTotal() {
         return resitenciaGolpesTotal;
     }
 

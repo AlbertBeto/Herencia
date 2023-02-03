@@ -14,19 +14,27 @@ public class Torso {
         this.resistenciaGolpes = resistenciaGolpes;
     }
 
-    public String getNombre() {
+
+
+    public void descripcionCompleta(){
+
+        System.out.println("Nombre: "+getNombre()+" Descripción: "+getDescripcion());
+    }
+
+
+    private String getNombre() {
         return nombre;
     }
 
-    public int getProteccionFisica() {
+    private int getProteccionFisica() {
         return proteccionFisica;
     }
 
-    public String getDescripcion() {
+    private String getDescripcion() {
         return descripcion;
     }
 
-    public int getResistenciaGolpes() {
+    private int getResistenciaGolpes() {
         return resistenciaGolpes;
     }
 }
