@@ -23,11 +23,11 @@ public class EquipoPersonaje {
 
 
 
-    public void setProteccionFisicaCompleta(int proteccionFisicaCompleta) {
+    public final void setProteccionFisicaCompleta(int proteccionFisicaCompleta) {
         this.proteccionFisicaCompleta = proteccionFisicaCompleta;
     }
 
-    public void setResitenciaGolpesTotal(int resitenciaGolpesTotal) {
+    public final void setResitenciaGolpesTotal(int resitenciaGolpesTotal) {
         this.resitenciaGolpesTotal = resitenciaGolpesTotal;
     }
 
