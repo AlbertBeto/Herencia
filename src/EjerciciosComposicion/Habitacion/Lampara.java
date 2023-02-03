@@ -1,4 +1,4 @@
-package EjerciciosComposicion;
+package EjerciciosComposicion.Habitacion;
 
 public class Lampara {
 
