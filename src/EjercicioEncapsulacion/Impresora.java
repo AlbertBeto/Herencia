@@ -7,6 +7,15 @@ public class Impresora {
     private int hojasImpresas=0;
     private boolean impresoraDobleCara=true;
 
+    public Impresora(boolean impresoraDobleCara){
+        setImpresoraDobleCara(impresoraDobleCara);
+    }
+
+
+    private void setImpresoraDobleCara(boolean impresoraDobleCara) {
+        this.impresoraDobleCara = impresoraDobleCara;
+    }
+
     public int anyadirToner(int neoToner){
         if(nivelToner+neoToner>100 || nivelToner+neoToner<nivelToner){
             System.out.println(-1);
@@ -19,7 +28,11 @@ public class Impresora {
     }
 
     public int imprimirPaginas(int paginas){
-        if (impresoraDobleCara==false){
+
+        if (paginas<0){
+            System.out.println("Has puesto impresiones negativas, meganto.");
+            return 0;
+        }else if (impresoraDobleCara==false){
             paginasImpresas += paginas;
             hojasImpresas += paginas;
             return hojasImpresas;
@@ -28,19 +41,16 @@ public class Impresora {
             if (paginas%2!=0){
                 paginasImpresas += paginas;
                 hojasImpresas= hojasImpresas +((paginas+1)/2);
+                System.out.println("Llevas impresas "+paginasImpresas+" paginas y has gastado "+hojasImpresas+" A4s.");
                 return hojasImpresas;
             }else{
                 paginasImpresas += paginas;
                 hojasImpresas= hojasImpresas +(paginas/2);
+                System.out.println("Llevas impresas "+paginasImpresas+"paginas y has gastado "+hojasImpresas+" A4s.");
                 return hojasImpresas;
             }
         }
      //imprimirPaginas
     }
-
-
-
-
-
     //class
 }
