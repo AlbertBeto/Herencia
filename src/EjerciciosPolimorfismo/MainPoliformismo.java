@@ -6,7 +6,7 @@ public class MainPoliformismo {
 
         Coche Ferrari = new Deportivo("Testarrosa",3850,320,4,2);
 
-
+        Ferrari.arrancar();
         Ferrari.acelerar();
         Ferrari.frenar();
 
@@ -18,6 +18,7 @@ Ferrari = new Autocaravana("Mileo 242",2000,130,1,1,5,3500,2950);
 
         Ferrari.acelerar();
         Ferrari.frenar();
+
 
     }
 

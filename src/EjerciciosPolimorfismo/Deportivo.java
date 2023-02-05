@@ -2,9 +2,9 @@ package EjerciciosPolimorfismo;
 
 public class Deportivo extends Coche{
 
-    private int velocidadMaxima;
-    private int aceleracion;
-    private int desaceleracion;
+    protected int velocidadMaxima;
+    protected int aceleracion;
+    protected int desaceleracion;
 
     public Deportivo(String modelo, int cilindros,int  velocidadMaxima, int aceleracion, int desaceleracion){
         super(modelo,cilindros);

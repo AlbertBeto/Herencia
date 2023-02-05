@@ -1,10 +1,10 @@
 package EjerciciosPolimorfismo;
 
 public abstract class Coche {
-    private String modelo;
-    private boolean motor=true;
-    private int ruedas=4;
-    private int cilindros;
+    protected String modelo;
+    protected boolean motor=true;
+    protected int ruedas=4;
+    protected int cilindros;
 
 
     public Coche(String modelo, int cilindros){
@@ -29,7 +29,7 @@ public abstract class Coche {
         return cilindros;
     }
 
-    private void arrancar(){
+    protected void arrancar(){
         System.out.println("El "+modelo+" ha sido arrancado.");
     }
 
