@@ -18,7 +18,7 @@ public class Impresora {
 
     public int anyadirToner(int neoToner){
         if(nivelToner+neoToner>100 || nivelToner+neoToner<nivelToner){
-            System.out.println("No hasintroducido un valor correcto.");
+            System.out.println("No has introducido un valor correcto.");
             return -1;
         }else{
             nivelToner += neoToner;
@@ -55,7 +55,7 @@ public class Impresora {
                 paginasImpresas += paginas;
                 hojasImpresas= hojasImpresas +(paginas/2);
                 nivelToner-=paginas;
-                System.out.println("Llevas impresas "+paginasImpresas+"paginas y has gastado "+hojasImpresas+" A4s.");
+                System.out.println("Llevas impresas "+paginasImpresas+" paginas y has gastado "+hojasImpresas+" A4s.");
                 System.out.println("El nivel de toner actual es: "+nivelToner);
                 return hojasImpresas;
             }
