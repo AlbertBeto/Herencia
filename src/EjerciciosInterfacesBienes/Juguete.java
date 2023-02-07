@@ -10,6 +10,12 @@ public class Juguete extends Bienes implements Imponible{
     }
 
     @Override
+    public double calculoImpuestos() {
+        double impuestos= (precio*Imponible.tasaImpuestos)/100;
+        return impuestos;
+    }
+
+    @Override
     public String toString() {
         return "Juguete{" +
                 "edadMinima=" + edadMinima +
@@ -18,9 +24,5 @@ public class Juguete extends Bienes implements Imponible{
                 '}';
     }
 
-    @Override
-    public double calculoImpuestos(double tasaImpuestos, double precio) {
-        double impuestos= (precio*tasaImpuestos)/100;
-        return impuestos;
-    }
+
 }

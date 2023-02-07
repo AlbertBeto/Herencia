@@ -19,8 +19,8 @@ public class Libro extends Bienes implements Imponible{
     }
 
     @Override
-    public double calculoImpuestos(double tasaImpuestos, double precio) {
-        double impuestos= (precio*tasaImpuestos)/100;
+    public double calculoImpuestos() {
+        double impuestos= (super.precio*Imponible.tasaImpuestos)/100;
         return impuestos;
     }
 
