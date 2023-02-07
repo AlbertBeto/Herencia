@@ -15,12 +15,13 @@ public class Ordenador {
     //Al tenerlo todo en privado creamos un metodo publico para poder llamarlo desde fuera.
 
     public void encender(){
-        this.getProcesador().presionarBotonEncendido();
+        getProcesador().presionarBotonEncendido();
         dibujarLogo();
     }
 
     private void dibujarLogo(){
         getMonitor().dibujarPixel(12,12);
+
     }
 
 
