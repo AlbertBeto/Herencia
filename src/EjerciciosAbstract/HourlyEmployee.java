@@ -15,9 +15,5 @@ public class HourlyEmployee extends Employee{
 
         return tasaPago*horasTrabajadas;
     }
-
-
-
-
-
+//class
 }
