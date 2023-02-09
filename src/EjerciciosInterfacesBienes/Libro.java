@@ -2,11 +2,16 @@ package EjerciciosInterfacesBienes;
 
 public class Libro extends Bienes implements Imponible{
 
-    protected String autor;
+    private String autor;
 
     public Libro(String descripcion, double precio, String autor) {
         super(descripcion, precio);
         this.autor = autor;
+    }
+
+
+    protected String getAutor() {
+        return autor;
     }
 
     @Override
