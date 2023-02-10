@@ -13,6 +13,9 @@ public class MainAbstract {
         HourlyEmployee Albert = new HourlyEmployee(8,38);
         System.out.println("El sueldo de Albert de esta semana es: "+Albert.calculateWeeklyPay());
 
+
+
+
     }
     //class
 }
