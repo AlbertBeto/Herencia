@@ -4,11 +4,10 @@ public class MainExcepcion {
 
     public static void main(String[] args) {
 
-String texto = "Test";
+ExcepcionTururu lolo = new ExcepcionTururu();
 
-int divisor = Integer.parseInt("Mi divisor");
+lolo.divisor();
 
-        System.out.println(3/0);
 
 
 
