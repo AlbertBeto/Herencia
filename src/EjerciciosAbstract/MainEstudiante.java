@@ -21,6 +21,8 @@ public class MainEstudiante {
         for (int i=0;i< cursoAlfa.length;i++) {
             System.out.println("Nombre: "+cursoAlfa[i].getNombre()+" Altura: "+cursoAlfa[i].getAltura()+" Edad: "+cursoAlfa[i].getEdad());
         }
+
+        /** Ordenado por Arrays.sort
 /*
         Arrays.sort(cursoAlfa);
         System.out.println();
