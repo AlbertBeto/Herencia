@@ -6,7 +6,7 @@ public class TrianguloEquilatero extends Forma{
     protected double altura;
 
     public TrianguloEquilatero(int numLados, double lado) {
-        super(numLados);
+        super(numLados=3);
         this.lado = lado;
     }
 

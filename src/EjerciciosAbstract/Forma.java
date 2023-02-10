@@ -12,6 +12,10 @@ public abstract class Forma {
         return numLados;
     }
 
+    public void setNumLados(int numLados) {
+        this.numLados = numLados;
+    }
+
     protected abstract double getArea();
 
     protected abstract double getPerimeter();

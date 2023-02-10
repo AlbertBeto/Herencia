@@ -2,7 +2,7 @@ package EjerciciosAbstract;
 
 public class Rectangulo extends Forma{
     public Rectangulo(int numLados, double ancho, double alto) {
-        super(numLados);
+        super(numLados=4);
         this.ancho = ancho;
         this.alto = alto;
     }
