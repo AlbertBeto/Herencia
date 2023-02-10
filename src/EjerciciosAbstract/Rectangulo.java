@@ -1,6 +1,6 @@
 package EjerciciosAbstract;
 
-public class Rectangulo extends Forma{
+public class Rectangulo extends Forma implements Redimensionable{
     public Rectangulo(int numLados, double ancho, double alto) {
         super(numLados=4);
         this.ancho = ancho;
@@ -20,4 +20,13 @@ public class Rectangulo extends Forma{
     protected double getPerimeter() {
         return 2*(ancho+alto);
     }
+
+    @Override
+    public void redimensionar(int x) {
+        ancho=x;
+        alto=x;
+
+    }
+
+    //class
 }
