@@ -6,5 +6,5 @@ public interface ShapeOperable {
     double area();
     final double PI=Math.PI;
 
-
+//class Interface
 }

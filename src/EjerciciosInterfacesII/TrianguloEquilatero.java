@@ -17,4 +17,5 @@ public class TrianguloEquilatero implements ShapeOperable{
     public double area() {
         return ((lado*lado)*Math.sqrt(3.0))/4;
     }
+    //class
 }
