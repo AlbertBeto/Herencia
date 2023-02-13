@@ -7,10 +7,14 @@ public class ExcepcionTururu {
         System.out.println(3/0);
 
     }
-        public void divisor () {
 
-        int divisor = Integer.parseInt("Mi divisor");
 
+        public void divisor () throws MiExcepcion{
+try {
+    int divisor = Integer.parseInt("Mi divisor");
+}catch (NumberFormatException e){
+    throw MiExcepcion;
+}
     }
 //class
 }

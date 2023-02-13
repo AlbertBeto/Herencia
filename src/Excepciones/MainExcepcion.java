@@ -2,7 +2,7 @@ package Excepciones;
 
 public class MainExcepcion {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MiExcepcion {
 
 ExcepcionTururu test = new ExcepcionTururu();
 try {
@@ -12,12 +12,12 @@ try {
 }
 
 
-try {
+
 test.divisor();
 
-}catch(NumberFormatException e){
-    System.out.println("Hay algo aquí que va mal!!");
-}
+
+
+
 
         //main
     }
