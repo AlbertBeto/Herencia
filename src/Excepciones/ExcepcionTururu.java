@@ -13,7 +13,7 @@ public class ExcepcionTururu {
 try {
     int divisor = Integer.parseInt("Mi divisor");
 }catch (NumberFormatException e){
-    throw MiExcepcion;
+    //throw MiExcepcion;
 }
     }
 //class
