@@ -12,14 +12,18 @@ public class MyList implements Salvable{
 
     @Override
     public void guardar(int[] array) {
-
         FileWriter fichero = null;
         PrintWriter pw = null;
         try
         {
+            /**
+             * Aqui esta la ruta a archivo y el escritor como tal.
+             */
             fichero = new FileWriter("archivo.txt");
             pw = new PrintWriter(fichero);
-
+            /**
+             * A continuación es donde está el lector del array y que copia cada campo en una línea.
+             */
             for (int i = 0; i < array.length; i++)
                 pw.println(array[i]);
 
@@ -35,10 +39,6 @@ public class MyList implements Salvable{
                 e2.printStackTrace();
             }
         }
-
-
     }
-
-
     //class
 }
